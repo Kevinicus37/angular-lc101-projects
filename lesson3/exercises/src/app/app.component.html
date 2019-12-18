@@ -23,7 +23,7 @@
 
       <div class="col-3">
          <div class="container-right" *ngIf="!takeOffEnabled">
-            <button (click)="moveRocket(rocketImage, 'up')" [disabled]="height > 330000">Up</button>
+            <button (click)="moveRocket(rocketImage, 'up')" [disabled]="height >= 330000">Up</button>
             <button (click)="moveRocket(rocketImage, 'down')" [disabled]="height < 10000">Down</button>
             <button (click)="moveRocket(rocketImage, 'right')" [disabled]="width > 460000">Right</button>
             <button (click)="moveRocket(rocketImage, 'left')" [disabled]="width < 10000">Left</button>
